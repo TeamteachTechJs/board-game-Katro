@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:black;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    left: 40%;
+}
+
+.content h1 {
+    padding-bottom: 30px;
+    padding-top: 130px;
+    font-family: "Times New Roman";
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+
+.content .play {
+    width: 160px;
+    height: 45px;
+    background: blue;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .play a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.play:hover {
+    background-color: #fff;
+}
+
+.content .about {
+    width: 160px;
+    height: 45px;
+    background: blue;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.content .about a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.about:hover {
+    background-color: #fff;
+}
+
+.content .exit {
+    width: 160px;
+    height: 45px;
+    background: blue;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.content .exit a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.exit:hover {
+    background-color: #fff;
+}

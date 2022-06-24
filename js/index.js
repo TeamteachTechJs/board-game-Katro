@@ -15,7 +15,7 @@ window.addEventListener( 'resize', function ( )
     camera.updateProjectionMatrix( );
 } );
 
-//controls = new THREE.OrbitControls( camera, renderer.domElement );
+controls = new THREE.OrbitControls( camera, renderer.domElement );
 
 //creation du shape
 var geometry = new THREE.BoxGeometry( 7,0.5,7);

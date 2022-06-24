@@ -15,7 +15,7 @@ window.addEventListener( 'resize', function ( )
     camera.updateProjectionMatrix( );
 } );
 
-controls = new THREE.OrbitControls( camera, renderer.domElement );
+//controls = new THREE.OrbitControls( camera, renderer.domElement );
 
 //creation du shape
 var geometry = new THREE.BoxGeometry( 7,0.5,7);
@@ -104,8 +104,8 @@ function addPion(position, colors) {
         pion.position.set( position[i].x, posY, position[i].z ); //(x, y, z)
         
         scene.add( pion );
-        pion.userData.name = 'PION';
-        pion.userData.movable = true;
+        //pion.userData.name = 'PION';
+        //pion.userData.movable = true;
     }
 }
 
@@ -118,7 +118,7 @@ var update = function ( ) {
 };
 
 var render = function ( ) {
-    moveObject();
+    //moveObject();
     renderer.render( scene, camera );
 };
 

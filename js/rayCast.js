@@ -28,3 +28,18 @@ window.addEventListener('mousemove', event => {
     pointer.y = -(event.clientX / window.innerHeight) * 2 + 1;
 })
 
+function moveObject() {
+    if (movable != null) {
+        raycaster.setFromCamera(pointer,camera)
+        const found = raycaster.intersectObjects(scene.children)
+        if (found.length>0){
+            for (let o of found) {
+                if (!o.object.userData.ground) 
+                continue;
+
+                movable.position.x = o.point.x
+                movable.position.z = o.point.z
+            }
+        }
+    }
+}
